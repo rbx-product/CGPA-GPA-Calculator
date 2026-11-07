@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RBX — SGPA &amp; CGPA Calculator for Students</title>
+    <meta name="description" content="Free SGPA, CGPA, target CGPA and percentage calculator with Anna University presets and custom grading. No login, no tracking." />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="canonical" href="%VITE_SITE_URL%" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RBX" />
+    <meta property="og:title" content="RBX — SGPA &amp; CGPA Calculator" />
+    <meta property="og:description" content="Calculate SGPA, CGPA, target CGPA and percentage. Honest labels on what is official." />
+    <meta property="og:url" content="%VITE_SITE_URL%" />
+    <meta name="theme-color" content="#1F4FE0" />
+    <script>
+      try {
+        var t = localStorage.getItem('rbx:theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
